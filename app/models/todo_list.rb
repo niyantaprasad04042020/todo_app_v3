@@ -3,4 +3,6 @@ class TodoList
   field :title, type: String
   field :description, type: String
   field :status, type: String
+
+  belongs_to :user
 end

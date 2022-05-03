@@ -31,6 +31,8 @@ class User
 
   before_create :generate_confirmation_instructions
 
+  has_many :todo_lists, dependent: :destroy
+
   def downcase_email
     self.email_id = self.email_id.delete(' ').downcase
   end
