@@ -5,4 +5,5 @@ class TodoList
   field :status, type: String
 
   belongs_to :user
+  has_many :todo_items
 end
