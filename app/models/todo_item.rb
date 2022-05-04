@@ -1,7 +1,7 @@
 class TodoItem
   include Mongoid::Document
   field :content, type: String
-  field :completed_at, tytpe: DateTime
+  field :completed_at, type: DateTime
   belongs_to :todo_list
 
   def completed?
