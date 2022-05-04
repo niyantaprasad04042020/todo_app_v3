@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     end
   end
 
-  root 'home#index'
+  root "todo_lists#index"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get "users/confirm", to: "users#confirm"
   resources :users, param: :user_name, except: [:signup]
